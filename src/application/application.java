@@ -52,7 +52,7 @@ public class application {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
-					// Load a file from file system
+					// load a file from file system
 					jFileChooser.showOpenDialog(jFrame);
 					FileReader fr = new FileReader(jFileChooser.getSelectedFile());
 					// FileReader fr = new FileReader("javacode/gui/in.txt");
