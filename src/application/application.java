@@ -82,6 +82,8 @@ public class application {
 				System.exit(0);
 			}
 		});
+		
+		//setting of frame
 
 		//file.add(newItem);
 		file.add(closeItem);
@@ -103,6 +105,7 @@ public class application {
 		jFrame.setLayout(new FlowLayout());
 		jFrame.setSize(new Dimension(400, 400));
 
+		//window closes
 		jFrame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
