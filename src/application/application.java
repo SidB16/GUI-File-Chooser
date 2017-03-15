@@ -105,7 +105,7 @@ public class application {
 		jFrame.setLayout(new FlowLayout());
 		jFrame.setSize(new Dimension(400, 400));
 
-		//Window closes
+		//window closes
 		jFrame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
