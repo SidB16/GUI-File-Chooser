@@ -32,7 +32,7 @@ public class application {
 		help = new Menu("Help");
 
 		loadItem = new MenuItem("Load");
-		newItem = new MenuItem("New");
+		//newItem = new MenuItem("New");
 		closeItem = new MenuItem("Close");
 		exitItem = new MenuItem("Exit");
 		cutItem = new MenuItem("Cut");
@@ -70,13 +70,20 @@ public class application {
 					textArea.setText(a);
 
 				} catch (Exception e1) {
-					textArea.setText("Error Loading File");
+					textArea.setText("No file was selected");
 					e1.printStackTrace();
 				}
 			}
 		});
+		
+		exitItem.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 
-		file.add(newItem);
+		//file.add(newItem);
 		file.add(closeItem);
 		file.add(divideItem);
 		file.add(exitItem);
@@ -89,7 +96,7 @@ public class application {
 		menuBar.add(edit);
 		menuBar.add(help);
 
-		textArea.setPreferredSize(new Dimension(380, 300));
+		textArea.setPreferredSize(new Dimension(400, 600));
 		textArea.repaint();
 		jFrame.add(textArea);
 
